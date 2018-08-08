@@ -1,9 +1,9 @@
 import { Ship } from "../Ship/Ship";
 
 export class Player {
-  name: string;
-  shipsArray: Ship[];
-  shotStatistic : {};
+  public name: string;
+  private shipsArray: Ship[];
+  private shotStatistic : {};
   constructor(name: string) {
     this.name = name;
     //each player have names and array of ships (four single-decker, three two-decker and so on)

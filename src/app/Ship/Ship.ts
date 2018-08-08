@@ -2,14 +2,14 @@ import { ShipType } from "./ShipType";
 
 export class Ship {
   //ship type (oneDeck, etc)
-  type: ShipType;
+  private type: ShipType;
   //shipe size and lifes depending on type
-  size: number;
-  lifes: number;
+  private size: number;
+  public lifes: number;
   //ship coords in the field
-  coordinates: {};
+  public coordinates: {};
   //isDead determines if the ship is destroyed or not
-  isDead: boolean;
+  public isDead: boolean;
   //when you init Ship define characteristics
   constructor(type: ShipType = null) {
     this.type = type;
